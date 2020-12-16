@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 # TODO
 # Move this class to new file
-class Rule:
+class Rule():
     """This is a base class for rule
     if someone want to define new rule then they need to inherit this class and override filter_data method
     """
@@ -47,7 +47,7 @@ class DateRule(Rule):
         return filter_data
 
 
-class SuspiciousOrders:
+class SuspiciousOrders():
     """This is a class to find suspicious trading """
 
     def __init__(self, symbol, input_filepath, start_date, end_date):

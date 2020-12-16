@@ -8,7 +8,7 @@ import context  # noqa
 from process_data import DateRule, PriceRule, SuspiciousOrders
 
 
-class TurretTest(unittest.TestCase):
+class ProcessDataTest(unittest.TestCase):
     @patch.object(SuspiciousOrders, "get_stock_data")
     @patch.object(SuspiciousOrders, "get_trade_data")
     def setUp(self, mock_data, mock_stock_data):
